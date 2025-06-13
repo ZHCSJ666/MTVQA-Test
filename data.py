@@ -12,7 +12,7 @@ zip_path = hf_hub_download(
 )
 
 # 解压目标目录
-target_dir = "/mnt/workspace/xintong/jlq/dataset/MTVQA-Test/"
+target_dir = "/ltstorage/home/3jiang/humanwithlove/testxintong/"
 os.makedirs(target_dir, exist_ok=True)
 
 # 解压 zip 文件并显示进度条
