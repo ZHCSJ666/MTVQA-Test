@@ -6,8 +6,8 @@ from tqdm import tqdm
 # 下载 zip 文件（自动缓存）
 print("📥 正在从 HuggingFace 下载数据集...")
 zip_path = hf_hub_download(
-    repo_id="ZHSCJ/MTVQA-Test-Errors",
-    filename="mtvqa_all_samples_test.zip",
+    repo_id="ZHCSJ/MTVQA-Test",
+    filename="mtvqa_test_images.zip",
     repo_type="dataset"
 )
 
