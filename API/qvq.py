@@ -138,7 +138,7 @@ if __name__ == "__main__":
     model_name = "qvq-max"
     image_folder = "/mnt/workspace/xintong/jlq/dataset/MTVQA-Test/"
     output_dir = f"/mnt/workspace/xintong/jlq/All_result/MTVQA/qvq-mtvqa-test-results-{today}/"
-    Path(output_dir).mkdir(exist_ok=True)
+    Path(output_dir).mkdir(parents=True, exist_ok=True)
 
     input_file = "../data/mtvqa_all_data_test_filtered_cleaned_tomodels.jsonl"
 
