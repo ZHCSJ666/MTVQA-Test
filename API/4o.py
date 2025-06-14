@@ -104,7 +104,7 @@ if __name__ == "__main__":
     model_name = "gpt-4o-2024-11-20"  # ✅ 使用支持图像输入的模型
     image_folder = "/mnt/workspace/xintong/jlq/dataset/MTVQA-Test/"
     output_dir = f"/mnt/workspace/xintong/jlq/All_result/MTVQA/gpt4o-mtvqa-test-results-{today}/"
-    Path(output_dir).mkdir(exist_ok=True)
+    Path(output_dir).mkdir(parents=True, exist_ok=True)
 
     input_file = "../data/mtvqa_all_data_test_filtered_cleaned_tomodels.jsonl"
 
